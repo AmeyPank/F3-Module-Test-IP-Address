@@ -1,6 +1,5 @@
 body {
-    width: 95%;
-    margin: 2.5rem;
+padding: 10px;
 }
 
 table {
@@ -47,24 +46,21 @@ table {
 
 #card {
     border: 1px solid black;
-    border-radius: 10px;
-    width: 41rem;
-    height: 8rem;
-    padding: 1rem;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 10px;
     font-size: 20px;
-    margin-bottom: 30px;
-
+    font-size: 1.1rem;
    
 }
 
 #post-office-list {
-    font-size: 30px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-    flex-wrap: wrap;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: auto 50%;
+    gap: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 #search-box input {

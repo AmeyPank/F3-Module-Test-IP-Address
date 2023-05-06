@@ -25,6 +25,7 @@ window.addEventListener('load', function () {
             .then(response => response.json())
             .then(data => {
                 ipAddress.innerText = data.ip;
+                ipAddress.style.color = "green"
                 loader.style.display = "none";
             });
 
