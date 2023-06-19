@@ -40,6 +40,12 @@ function showMap(latitude, longitude) {
     width="100%" height="500" frameborder="0" style="border:0; "></iframe>`;
     map.appendChild(div);
 }
+if (!showMap) {
+    loader.style.display = "none";
+}else{
+    loader.style.display = "block";
+
+}
 
 // Function to get client's IP address
 function getIP(json) {
@@ -93,6 +99,12 @@ function getIP(json) {
                     });
             }
             fetchPostOffices()
+            if (postOffices) {
+                loader.style.display = "none";
+            } else {
+                loader.style.display = "block";
+
+            }
 
             // Display list of post offices
             function displayPostOffices(postOffices) {
